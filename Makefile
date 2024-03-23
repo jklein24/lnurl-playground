@@ -7,7 +7,7 @@ static/bundle.js: $(shell find ./client)
 codec/static/bundle.js: $(shell find ./codec/client)
 	cd codec && make
 
-static/codec/bundle.js: codec/static/bundle.js codec/static/index.html codec/static/bundle.css
+static/codec/bundle.js: codec/static/bundle.js codec/static/index.html
 	rm -rf static/codec
 	cp -r codec/static static/codec
 
